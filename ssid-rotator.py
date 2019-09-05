@@ -31,11 +31,11 @@ if todayssidfile.is_file():
     os.remove('/usr/local/bin/wifi-messages/output/ssid.txt')
 # Find the next two hours worth of events and writes it to ssid file
     open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:00:00 ' + line for line in open(str(todayssidfile)) if (nowhour + '00') in line)
-    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:00:00 ' + line for line in open(str(todayssidfile)) if (nowhour + '30') in line)
-    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:00:00 ' + line for line in open(str(todayssidfile)) if (nexthour + '00') in line)
-    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:00:00 ' + line for line in open(str(todayssidfile)) if (nexthour + '30') in line)
+    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:00:30 ' + line for line in open(str(todayssidfile)) if (nowhour + '30') in line)
+    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:01:00 ' + line for line in open(str(todayssidfile)) if (nexthour + '00') in line)
+    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:01:30 ' + line for line in open(str(todayssidfile)) if (nexthour + '30') in line)
 # Attribution
-    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:00:00 @github:vgrsec:wifi-messages')
+    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:99:99 z_github:vgrsec:wifi-messages')
 else :
     todayssidfile = Path('/usr/local/bin/wifi-messages/input/_default.txt')
     # Delete the old file
@@ -43,7 +43,7 @@ else :
     # Write Defaults to SSID
     open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines(line for line in open(str(todayssidfile)))
     # Attribution
-    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:00:00 @github:vgrsec:wifi-messages')
+    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:99:99 z_github:vgrsec:wifi-messages')
 
 
 
