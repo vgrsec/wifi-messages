@@ -1,0 +1,4 @@
+pathlib==1.0.1
+public==2019.4.13
+timedelta==2019.4.13
+virtualenv==16.7.5

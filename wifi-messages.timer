@@ -1,0 +1,13 @@
+[Unit]
+Description=Run wifi-messages every 6 minutes
+RefuseManualStart=no
+RefuseManualStop=no
+
+[Timer]
+Persistent=false 
+OnBootSec=90
+OnCalendar=*:0/20 
+Unit=wifi-messages.service
+
+[Install]
+WantedBy=timers.target
