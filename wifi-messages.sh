@@ -1,5 +1,5 @@
 #!/bin/bash
-
+pkill wifi-messages.s
 ntpdate 1.ro.pool.ntp.org
 python3 /usr/local/bin/wifi-messages/ssid-rotator.py
 airmon-ng check kill
