@@ -1,4 +1,5 @@
 #!/bin/bash
+sleep 30
 systemctl restart wifi-messages.service
 ntpdate 1.ro.pool.ntp.org
 python3 /usr/local/bin/wifi-messages/ssid-rotator.py
