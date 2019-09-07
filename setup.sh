@@ -8,19 +8,6 @@ apt-get install aircrack-ng -y
 apt-get install mdk3 -y
 apt-get install ntpdate -y
 
-# apt-get install gcc -y
-# apt-get install autoconf -y
-# apt-get install git-y
-
-# wget https://download.aircrack-ng.org/aircrack-ng-1.5.2.tar.gz
-# tar -zxvf aircrack-ng-1.5.2.tar.gz
-# cd aircrack-ng-1.5.2
-# autoreconf -i
-# ./configure --with-experimental
-# make
-# make install
-# ldconfig
-
 cd /usr/local/bin/
 git clone https://github.com/vgrsec/wifi-messages.git
 cd /usr/local/bin/wifi-messages
