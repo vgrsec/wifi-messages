@@ -10,21 +10,7 @@ Also I was on an airplane and I wanted to write an SSID Generator with the Derby
 
 ## Setup
 
-1. Get a Raspberry Pi
-1. Do things to make it a hot spot
-1. Do other things to rotate its ssid every 15 minutes
-1. Do more things 
-1. Whatever
-
-## Usage
-
-### setup.sh
-
-1. Install python3 and pip
-* Python3
-* Pip
-* virtualenv
-* requirements.txt
+* Read https://www.vgrsec.com/post20190906.html
 
 
 
