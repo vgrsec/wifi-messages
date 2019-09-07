@@ -5,7 +5,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/wifi-messages/wifi-messages.sh
+ExecStart=/bin/bash /usr/local/bin/wifi-messages/wifi-messages.sh & > /dev/null &
 User=root
 Restart=always
 RestartSec=3
