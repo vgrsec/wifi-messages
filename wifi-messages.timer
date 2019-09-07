@@ -6,8 +6,8 @@ RefuseManualStop=no
 [Timer]
 Persistent=false 
 OnBootSec=90
-OnCalendar=*:0/20 
-Unit=wifi-messages.service
+OnCalendar=*:0/5 
+Unit=wifi-messages-restart.service
 
 [Install]
 WantedBy=timers.target
