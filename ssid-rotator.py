@@ -41,7 +41,7 @@ else :
     # Delete the old file
     os.remove('/usr/local/bin/wifi-messages/output/ssid.txt')
     # Write Defaults to SSID
-    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines(line for line in open(str(todayssidfile)))
+    open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:01:30 ' line for line in open(str(todayssidfile)))
     # Attribution
     open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:99:99 z_github:vgrsec:wifi-messages')
 
