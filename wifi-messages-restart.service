@@ -8,7 +8,7 @@ Type=simple
 ExecStart=/bin/bash /usr/local/bin/wifi-messages/wifi-messages-restart.sh
 User=root
 Restart=always
-RestartSec=3
+RestartSec=900
 
 [Install]
 WantedBy=multi-user.target
