@@ -1,5 +1,5 @@
 [Unit]
-Description=Run wifi-messages every 6 minutes
+Description=Run wifi-messages on boot
 RefuseManualStart=no
 RefuseManualStop=no
 

@@ -36,9 +36,10 @@ git clone https://github.com/vgrsec/wifi-messages.git
 cd /usr/local/bin/wifi-messages
 pip3 install -r ./requirements.txt
 cp /usr/local/bin/wifi-messages/wifi-messages.service /etc/systemd/system/
-cp /usr/local/bin/wifi-messages/wifi-messages.timer /etc/systemd/system/
 
 systemctl start wifi-messages.timer
 systemctl enable wifi-messages.timer
+systemctl start wifi-messages-restart.service
+systemctl enable wifi-messages-restart.service
 
 reboot
