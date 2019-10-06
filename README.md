@@ -10,14 +10,12 @@ Also I was on an airplane and I wanted to write an SSID Generator with the Derby
 
 ## Setup
 
-* Read https://www.vgrsec.com/post20190906.html
-
-
+* Read https://www.vgrsec.com/post20191006.html
 
 ## Faq
 
-* **This doesn't work right?**
-  * Ok. Thanks for noticing. 
+* **Why are you loading files from /boot**
+  * I don't feel like ssh'ing into my pi to update the messages I'm yelling into the void
 
 * **Why is this poorly written**
   * I don't come to your house and complain about the free food. But I might offer take out the next time I visit. 
@@ -27,10 +25,10 @@ Also I was on an airplane and I wanted to write an SSID Generator with the Derby
     * git commit 
     * git push
 
-* Why does this crash and cause cancer according to CA Prop 2?
+* **Why does this crash and cause cancer according to CA Prop 2?**
   * Because error handling is boring, and when my wife says "what have you been up to today" there needs to be more for me to say than "well, I wrote this script". - pugwonk@
 
-* Seriously this won't work for midnight or any number of other untested conditions, why?
+* **Seriously this won't work for midnight or any number of other untested conditions, why?**
   * 😐
 
 ## Things that were useful
