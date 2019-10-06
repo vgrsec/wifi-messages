@@ -25,7 +25,7 @@ nexthour = nexthour.strftime('%H')
 
 
 # Find Input File for Today
-todayssidfile = Path('/usr/local/bin/wifi-messages/input/' + nowdate + '.txt')
+todayssidfile = Path('/boot/wifi-messages/input/' + nowdate + '.txt')
 if todayssidfile.is_file():
 # Delete the old file
     os.remove('/usr/local/bin/wifi-messages/output/ssid.txt')
@@ -37,7 +37,7 @@ if todayssidfile.is_file():
 # Attribution
     open('/usr/local/bin/wifi-messages/output/ssid.txt','a+').writelines('DE:AD:BE:EF:99:99 z_github:vgrsec:wifi-messages')
 else :
-    todayssidfile = Path('/usr/local/bin/wifi-messages/input/_default.txt')
+    todayssidfile = Path('/boot/wifi-messages/input/_default.txt')
     # Delete the old file
     os.remove('/usr/local/bin/wifi-messages/output/ssid.txt')
     # Write Defaults to SSID

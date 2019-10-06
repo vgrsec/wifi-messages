@@ -31,11 +31,21 @@ apt-get install aircrack-ng -y
 apt-get install mdk3 -y
 apt-get install ntpdate -y
 
+# Install Wifi Messages
+
 cd /usr/local/bin/
 git clone https://github.com/vgrsec/wifi-messages.git
 cd /usr/local/bin/wifi-messages
 pip3 install -r ./requirements.txt
+
+# Place WiFi Messages into Boot
+mkdir /boot/wifi-messages
+mv /usr/local/bin/wifi-messages/input /boot/wifi-messages/
+
+#Enable Wifi Messages
 cp /usr/local/bin/wifi-messages/wifi-messages.service /etc/systemd/system/
+cp /usr/local/bin/wifi-messages/wifi-messages.timer /etc/systemd/system/
+cp /usr/local/bin/wifi-messages/wifi-messages-restart.service /etc/systemd/system/
 
 systemctl start wifi-messages.timer
 systemctl enable wifi-messages.timer
